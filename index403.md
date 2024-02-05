@@ -1,13 +1,11 @@
 ---
-permalink: /signup
-title: Sign Up
+permalink: /403
+title: 403page
 ---
 
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Sign-In/Register and CSV Data</title>
-<style>
+    <style>
         .darkmode {
             background: #252525;
             color: #ffffff;
@@ -20,7 +18,20 @@ title: Sign Up
     <link id="theme-style" rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body class="lightmode">
-    <p>Sign up Area</p>
+    <div class="index">
+        <div class="center-block" style="margin: 2% 10% 10%; font-family: gilroy,serif;">
+            <div class="col-12" style="text-align: center;">
+                <h1><strong>Unauthorized</strong></h1>
+            </div>
+            <div class="jumbotron jumbotron-fluid" style="text-align: center; ">
+                <h2>Try Again</h2>
+                <!-- Prompt the user to go back to where they were before 403 page showed -->
+                <a href="javascript:history.back()">Go Back</a>
+                <p>Or</p>
+                <a href="/AtlasIndex/register">Register</a><a> Or </a><a href="/AtlasIndex/signin">Sign in</a>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
     var darkMode = false;
